@@ -1,5 +1,5 @@
 {
-  description = "Example flake which just gives you a dev shell with yarn";
+  description = "LLVM pass in Nix with AFL and other goodies";
   inputs = {
     nixpkgs.url = "github:lf-/nixpkgs/jade/update-afl";
     flake-utils.url = "github:numtide/flake-utils";
