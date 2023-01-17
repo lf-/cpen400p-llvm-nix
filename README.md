@@ -22,14 +22,23 @@ Resources used:
 
   Put `extra-experimental-features = nix-command flakes` into
   `~/.config/nix/nix.conf`.
+
+#### direnv
+
+direnv is a nice tool to let you `cd` into your project and get access to the
+tools you need to develop it.
+
+You can find out more here:
+
 - direnv: https://direnv.net/
 - nix-direnv, configured in your direnv config:
   https://github.com/nix-community/nix-direnv
 
 ### Getting started
 
-Allow the `.envrc` with `direnv allow`. This will probably build a copy of klee
-and afl++.
+Allow the `.envrc` with `direnv allow`. Alternatively you can use `nix develop`
+to enter a development shell. This will probably build a copy of klee and
+afl++, which, once done, won't need to be done again.
 
 Build the pass with `cmake -GNinja && ninja`.
 
