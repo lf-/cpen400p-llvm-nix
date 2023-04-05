@@ -1,10 +1,11 @@
 cmake_minimum_required(VERSION 3.24)
-project(NixLLVMSample)
-find_package(LLVM REQUIRED CONFIG)
 
 # horrific crimes since cmake tries "gcc" before "cc" and gets the system compiler. awful.
 set(CMAKE_C_COMPILER "clang")
 set(CMAKE_CXX_COMPILER "clang++")
+
+project(NixLLVMSample)
+find_package(LLVM REQUIRED CONFIG)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
